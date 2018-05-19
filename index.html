@@ -2,657 +2,703 @@
 <html>
 <head>
 <title>Home</title>
-<!-- for-mobile-apps -->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<!-- Custom Theme files -->
+<script src="js/jquery.min.js"></script>
+<!--theme-style-->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />	
+<!--//theme-style-->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="" />
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
-		function hideURLbar(){ window.scrollTo(0,1); } </script>
-<!-- //for-mobile-apps -->
-<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-<link rel="stylesheet" type="text/css" href="css/component.css" />
-<link href="css/galleryeffect.css" rel="stylesheet" type="text/css" media="all" />
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-<!-- js -->
-<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
-<!-- //js -->
-<!-- fonts -->
-<link href='https://fonts.googleapis.com/css?family=Rajdhani:400,300,500,600,700' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Pathway+Gothic+One' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-<!-- //fonts -->
-	<!-- start-smoth-scrolling -->
-		<script type="text/javascript" src="js/move-top.js"></script>
-		<script type="text/javascript" src="js/easing.js"></script>
-		<script type="text/javascript">
-			jQuery(document).ready(function($) {
-				$(".scroll").click(function(event){		
-					event.preventDefault();
-					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
-				});
-			});
-		</script>
-	<!-- start-smoth-scrolling -->
-<script src="js/responsiveslides.min.js"></script>
-					<script>
-											// You can also use "$(window).load(function() {"
-											$(function () {
-											 // Slideshow 4
-											$("#slider3").responsiveSlides({
-												auto: true,
-												pager: true,
-												nav: false,
-												speed: 500,
-												namespace: "callbacks",
-												before: function () {
-											$('.events').append("<li>before event fired.</li>");
-											},
-											after: function () {
-												$('.events').append("<li>after event fired.</li>");
-												}
-												});
-												});
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+					jQuery(document).ready(function($) {
+						$(".scroll").click(function(event){		
+							event.preventDefault();
+							$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+						});
+					});
 					</script>
-<!-- menu sliding -->
-	<link rel="stylesheet" href="css/idangerous.swiper.css">
-	<script type='text/javascript' src='js/idangerous.swiper.min.js'></script>
-	<script type='text/javascript' src='js/masonry.pkgd.min.js'></script>
-	<script type='text/javascript' src='js/custom.js'></script>
-<!-- //menu sliding -->
+
+<script type="text/javascript" src="js/numscroller-1.0.js"></script>
+<link href="css/index.css" rel="stylesheet" type="text/css" media="all" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Noto+Sans:400,700' rel='stylesheet' type='text/css'>
+
 </head>
 <body>
-<!-- banner -->
-<div id="main-wrapper">
-	<div id="top">
-		<a href="#" id="sidebar-button"></a>
-		<header id="logo">
-			<div id="home" class="grid__item color-9">
-				<h1><a class="link link--ilin" href="index.html"><span>Rock </span><span>Star</span></a></h1>
-			</div>
-		</header>
-		<div class="search-box">
-			<form action="javascript:void(0);" method="get">
+<!--header-->
+<div class="header" id="header">
+	<div class="head" >
+				<div class="nav-top">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+					  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					  </button>
+						 <div class="navbar-brand logo ">
+							<h1 class="animated wow pulse" data-wow-delay=".5s">
+							<a href="index.html">HolyDudeCS</a></h1>
+						</div>
+<div class="clearfix"></div>
+					</div>
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse nav-wil links" id="bs-example-navbar-collapse-1">
+					<div class="fill">
+					<ul class="nav navbar-nav ">
+					<li><a href="index.html" class="scroll active" data-hover="Home">主页</a> </li>
+						<li><a href="#services" class="scroll" data-hover="About">关于我们</a> </li>
+						<li><a href="#success" class="scroll" data-hover="Gallery">特色</a></li>
+						<!--<li><a href="#testimonials" class="scroll" data-hover="Gallery">Testimonials</a></li>-->
+						<li><a href="#gallery" class="scroll" data-hover="Gallery">老客户反馈</a></li>
+                        <!--<li><a href="#team" class="scroll" data-hover="Codes">Team </a></li> -->
+                        <!--<li><a href="#contact" class="scroll" data-hover="Contact">Contact</a></li>-->
+					  </ul>
+					  <div class="clearfix"></div>
+					</div>
+					</div><!-- /.navbar-collapse -->
+				</div>
+	
+<!-- start search-->
+	
+				<div class="search-box">
+				   <div id="sb-search" class="sb-search">
+					  <form>
+						 <input class="sb-search-input" placeholder="Enter your search term..." type="search" name="search" id="search">
+						 <input class="sb-search-submit" type="submit" value="">
+						 <span class="sb-icon-search"> </span>
+					</form>
+					</div>
+				 </div>
+				 <!----search-scripts---->
+				 <script src="js/classie.js"></script>
+				 <script src="js/uisearch.js"></script>
+				   <script>
+					 new UISearch( document.getElementById( 'sb-search' ) );
+				   </script>
+					<!----//search-scripts---->
+
+
+			  <div class="clearfix"></div>	
+		</div>
+	
+</div>
+<!--content-->
+<script src="js/responsiveslides.min.js"></script>
+ <script>
+    // You can also use "$(window).load(function() {"
+    $(function () {
+      $("#slider2").responsiveSlides({
+        auto: true,
+        pager: true,
+        speed: 300,
+        namespace: "callbacks",
+      });
+    });
+  </script>
+
+<div class="banner">
+<div class="container">
+
+	<!--banner-->
+		 <div class="slider">
+			<ul class="rslides" id="slider2">
+			  <li><div class="banner-text"><b>[</b>
+		<h2> HolyDudeCS <span> 专业的CS代写团队 </span></h2>
+		<h6>由一群编程爱好者自发组成</h6><b class="right-a">]</b>
+	</div></li>
+			  <li><div class="banner-text"><b>[</b>
 			
-			<fieldset>
+		<h2> 优质的服务<span> 全CS硕士以上学历代写</span></h2>
+		<h6>专业的素质，高效的团队</h6><b class="right-a">]</b>
+	</div></li>
+			  <!--<li><div class="banner-text"><b>[</b>-->
+		<!--<h2>Lorem ipsum <span>Dolor sit amet</span></h2>-->
+		<!--<h6>There are many variations of passages</h6><b class="right-a">]</b>-->
+	<!--</div></li>		 -->
+			</ul>
+		</div>
+		
+</div>
+</div>
+<!--content-->
+<div class="service" id="services">
+	<div class="container">
+		<div class="ser-top">
+			<h3>关于我们</h3>
+			<div class="ser-t">
+				<b></b>
+				<b class="line"></b>
+			</div>
+						<p> 我们是一群编程爱好者，分布在中，北美，欧，澳，深知在国外留学读书的不易和艰辛，因此我们组建了这个团队，致力于高效低价地为海外CS留学生解决课业问题</p>
+
+		</div>
+		<div class="service-head">
+			<div class="col-md-5 ser-head">
 				
-				<ul class="toolbar clearfix">
-
-					<li><input type="search" id="search" placeholder="What are you looking for?"></li>
-					<li><button type="submit" id="btn-search"><span class="fontawesome-search"></span></button></li>
-
-				</ul>
-
-			</fieldset>
-
-			</form>
-		</div>
-		<script>
-			( function() {
-
-				$('#btn-search').on('click', function(e) {
-
-					e.preventDefault();
-					$('#search').animate({width: 'toggle'}).focus();
-
-				});
-
-			} () );
-		</script>
-
-	</div>
-	<!-- Content -->
-	<div id="content">
-		<div id="fullscreen-slider" class="swiper-container">
-			
-				<div class="banner-text">
-					<div class="banner-info">
-						<h3>Never Under estimate <span>the power of</span> Rock music</h3>
-					</div>
-				</div>
-		</div>
-		<div id="about" class="banner-bottom">
-			<div class="container">
-				<div class="col-md-4 bottom-left">
-					<h3>Welcome To Rock Star</h3>
-					<p> Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, 
-					consectetur, adipisci velit, sed quia non numquam eius modi tempora 
-					incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
-										
-					</p>
-				</div>
-				<div class="col-md-8 bottom-right">
-					<div class="bot-left">
-						<div class="progress">
-							<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-								<span class="sr-only">60% Complete</span>
-							</div>
-						</div>
-						<div class="progress">
-							<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-								<span class="sr-only">60% Complete</span>
-							</div>
-						</div>
-						<div class="progress">
-							<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-								<span class="sr-only">60% Complete</span>
-							</div>
-						</div>
-					</div>
-					<div class="bot-right">
-						<div class="content-item">
-							<div class="overlay"></div>
-							  <div class="corner-overlay-content"></div>
-							  <div class="overlay-content">
-								<h4>Repudiandae</h4>
-								<p>Logo for a screen printing company. They wanted 
-								a detachable recognizable brand that didn't need the name of the company.
-								</p>
-							  </div>
-						</div>
-					</div>
-					<div class="clearfix"></div>
-				</div>
-				<div class="clearfix"></div>
+						<h5>请通过微信联系我们</h5>
+						<h5>美东时间 11:00 - 18:00之间可能回复稍慢，望谅解</h5>
+								<img src="images/aa.jpg" class="img-responsive" alt="">
+					<ul>
+						<strong><h5>test保证全过，只做满分作业</h5>
+						<strong><h5>全CS硕士以上学历代写</h5>
+						<strong><h5>首单8折 首单8折 首单8折</h5>
+					</ul>
+					
 			</div>
-		</div>
-		<div class="content-grid">
-			<div class="container">
-				<div class="col-md-8 bottom-right-one">
-					<div class="bot-right-one">
-						<div class="content-item content-one">
-							<div class="overlay"></div>
-							  <div class="corner-overlay-content"></div>
-							  <div class="overlay-content">
-								<h4>Repudiandae</h4>
-								<p>Logo for a screen printing company. They wanted 
-								a detachable recognizable brand that didn't need the name of the company.
-								</p>
-							  </div>
-						</div>
+			<div class="col-md-7 ser-head1">
+				<div class="col-md-6 ser-grid ">
+				<span></span>
+					<div class=" hi-icon-effect-7 hi-icon-effect-7a">
+						<i class="glyphicon glyphicon-leaf hi-icon "> </i>
 					</div>
-					<div class="bot-left-one">
-						<div class="progress">
-							<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-								<span class="sr-only">60% Complete</span>
-							</div>
-						</div>
-						<div class="progress">
-							<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-								<span class="sr-only">60% Complete</span>
-							</div>
-						</div>
-						<div class="progress">
-							<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-								<span class="sr-only">60% Complete</span>
-							</div>
-						</div>
+					<h3>首单8折</h3>
+                    <p><h4>首单8折，首单8折，首单8折；如果带同学一起来可以折上折 </h4></p>
+
+				</div>
+				<div class="col-md-6 ser-grid ">
+					<div class=" hi-icon-effect-7 hi-icon-effect-7a">
+						<i class="glyphicon glyphicon-user hi-icon "> </i>
+					</div>
+					<h3>全CS硕士以上学历代写</h3>
+                    <p><h4>我们团队都是CS硕士以上学历，并且都具有丰富的代写经验 </h4></p>
+										<p></p>
+
+				</div>
+				<div class="col-md-6 ser-grid ">
+					<div class=" hi-icon-effect-7 hi-icon-effect-7a">
+						<i class="glyphicon glyphicon-cog hi-icon "> </i>
 					</div>
 					
-					<div class="clearfix"></div>
+					<h3>验收之后再付全款</h3>
+                    <p><h4>验收完之后，付全款,不用担心上当受骗</h4></p>
 				</div>
-				<div class="col-md-4 bottom-left-one">
-					<h3>Feel The Power Of Music</h3>
-					<p> Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, 
-					consectetur, adipisci velit, sed quia non numquam eius modi tempora 
-					incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
-										
-					</p>
-				</div>
-				<div class="clearfix"></div>
-			</div>
-		</div>
-		<div id="services" class="instruments">
-			<div class="container">
-				<h3>Music is the voice of the soul</h3>
-				<div class="inst-grids">
-					<div class="col-md-3 services-gd text-center wow fadeInLeft animated" data-wow-delay=".5s">
-						<div class="hi-icon-wrap hi-icon-effect-9 hi-icon-effect-9a">
-							<a href="#" class="hi-icon"><img src="images/icon1.png" alt=" " /></a>
-						</div>
-						<h4>Accusantium</h4>
+				<div class="col-md-6 ser-grid ">
+					<div class=" hi-icon-effect-7 hi-icon-effect-7a">
+						<i class="glyphicon glyphicon-piggy-bank hi-icon"> </i>
 					</div>
-					<div class="col-md-3 services-gd text-center wow fadeInLeft animated" data-wow-delay=".5s">
-						<div class="hi-icon-wrap hi-icon-effect-9 hi-icon-effect-9a">
-							<a href="#" class="hi-icon"><img src="images/icon2.png" alt=" " /></a>
-						</div>
-						<h4>Doloremque</h4>
-					</div>
-					<div class="col-md-3 services-gd text-center wow fadeInLeft animated" data-wow-delay=".5s">
-						<div class="hi-icon-wrap hi-icon-effect-9 hi-icon-effect-9a">
-							<a href="#" class="hi-icon"><img src="images/icon3.png" alt=" " /></a>
-						</div>
-						<h4>Voluptatem</h4>
-					</div>
-					<div class="col-md-3 services-gd text-center wow fadeInLeft animated" data-wow-delay=".5s">
-						<div class="hi-icon-wrap hi-icon-effect-9 hi-icon-effect-9a">
-							<a href="#" class="hi-icon"><img src="images/icon4.png" alt=" " /></a>
-						</div>
-						<h4>Consequatur</h4>
-					</div>
-					<div class="clearfix"> </div>		
-				</div>
-			</div>
-		</div>
-		<div id="gallery" class="gallery">
-			<div class="container">
-				<h3>Our Albums</h3>
-				<section>
-				<ul class="lb-album">
-					<li class=" col-md-4 grid">
-						<div class="gal-one">
-							<a href="#image-1">
-								<figure class="effect-apollo">
-									<img src="images/g1.jpg" alt="image1">
-									<figcaption>
-									</figcaption>			
-								</figure>
-							</a>
-								<div class="lb-overlay" id="image-1">
-										<img src="images/g1.jpg" alt="image1" />
-										<div class="gal-info">							
-											<h3>Rock Star</h3>
-											<p>Neque porro quisquam est, qui dolorem ipsum 
-											quia dolor sit amet, consectetur, adipisci velit, 
-											sed quia non numquam eius modi tempora incidunt ut
-											labore et dolore magnam aliquam quaerat voluptatem.</p>
-										</div>
-										<a href="index.html" class="lb-close">Close</a>
-								</div>
-						</div>
-						<div class="gal-two">
-							<h5>Doloremque</h5>
-							<p>Neque porro quisquam est, qui dolorem ipsum 
-							quia dolor sit amet, consectetur, adipisci velit 
-							</p>
-						</div>
-						<div class="gal-one">
-							<a href="#image-2">
-								<figure class="effect-apollo">
-									<img src="images/g2.jpg" alt="image2">
-									<figcaption>
-									</figcaption>			
-								</figure>
-							</a>
-								<div class="lb-overlay" id="image-2">
-										<img src="images/g2.jpg" alt="image2" />
-										<div class="gal-info">							
-											<h3>Rock Star</h3>
-											<p>Neque porro quisquam est, qui dolorem ipsum 
-											quia dolor sit amet, consectetur, adipisci velit, 
-											sed quia non numquam eius modi tempora incidunt ut
-											labore et dolore magnam aliquam quaerat voluptatem.</p>
-										</div>
-										<a href="index.html" class="lb-close">Close</a>
-								</div>
-						</div>
-					</li><div class="tlinks">Collect from <a href="http://www.cssmoban.com/"  title="网站模板">网站模板</a></div>
-					<li class=" col-md-4 grid">
-						<div class="gal-one">
-							<a href="#image-3">
-								<figure class="effect-apollo">
-									<img src="images/g3.jpg" alt="image3">
-									<figcaption>
-									</figcaption>			
-								</figure>
-							</a>
-								<div class="lb-overlay" id="image-3">
-										<img src="images/g3.jpg" alt="image3" />
-										<div class="gal-info">							
-											<h3>Rock Star</h3>
-											<p>Neque porro quisquam est, qui dolorem ipsum 
-											quia dolor sit amet, consectetur, adipisci velit, 
-											sed quia non numquam eius modi tempora incidunt ut
-											labore et dolore magnam aliquam quaerat voluptatem.</p>
-										</div>
-										<a href="index.html" class="lb-close">Close</a>
-								</div>
-						</div>
-						<div class="gal-one gal-three">
-							<a href="#image-4">
-								<figure class="effect-apollo">
-									<img src="images/g4.jpg" alt="image4">
-									<figcaption>
-									</figcaption>			
-								</figure>
-							</a>
-								<div class="lb-overlay" id="image-4">
-										<img src="images/g4.jpg" alt="image4" />
-										<div class="gal-info">							
-											<h3>Rock Star</h3>
-											<p>Neque porro quisquam est, qui dolorem ipsum 
-											quia dolor sit amet, consectetur, adipisci velit, 
-											sed quia non numquam eius modi tempora incidunt ut
-											labore et dolore magnam aliquam quaerat voluptatem.</p>
-										</div>
-										<a href="index.html" class="lb-close">Close</a>
-								</div>
-						</div>
-						<div class="gal-one">
-							<a href="#image-5">
-								<figure class="effect-apollo">
-									<img src="images/g5.jpg" alt="image5">
-									<figcaption>
-									</figcaption>			
-								</figure>
-							</a>
-								<div class="lb-overlay" id="image-5">
-										<img src="images/g5.jpg" alt="image5" />
-										<div class="gal-info">							
-											<h3>Rock Star</h3>
-											<p>Neque porro quisquam est, qui dolorem ipsum 
-											quia dolor sit amet, consectetur, adipisci velit, 
-											sed quia non numquam eius modi tempora incidunt ut
-											labore et dolore magnam aliquam quaerat voluptatem.</p>
-										</div>
-										<a href="index.html" class="lb-close">Close</a>
-								</div>
-						</div>
-					</li>
-					<li class="col-md-4 grid">
-						<div class="gal-one gal-five">
-							<a href="#image-6">
-								<figure class="effect-apollo">
-									<img src="images/g6.jpg" alt="image6">
-									<figcaption>
-									</figcaption>			
-								</figure>
-							</a>
-								<div class="lb-overlay" id="image-6">
-										<img src="images/g6.jpg" alt="image6" />
-										<div class="gal-info">							
-											<h3>Rock Star</h3>
-											<p>Neque porro quisquam est, qui dolorem ipsum 
-											quia dolor sit amet, consectetur, adipisci velit, 
-											sed quia non numquam eius modi tempora incidunt ut
-											labore et dolore magnam aliquam quaerat voluptatem.</p>
-										</div>
-										<a href="index.html" class="lb-close">Close</a>
-								</div>
-						</div>
-						<div class="gal-two gal-five gal-six">
-							<h5>Doloremque</h5>
-							<p>Neque porro quisquam est, qui dolorem ipsum 
-							quia dolor sit amet, consectetur, adipisci 
-							</p>
-						</div>
-						<div class="gal-one gal-five">
-							<a href="#image-7">
-								<figure class="effect-apollo">
-									<img src="images/g7.jpg" alt="image7">
-									<figcaption>
-									</figcaption>			
-								</figure>
-							</a>
-								<div class="lb-overlay" id="image-7">
-										<img src="images/g7.jpg" alt="image7" />
-										<div class="gal-info">							
-											<h3>Rock Star</h3>
-											<p>Neque porro quisquam est, qui dolorem ipsum 
-											quia dolor sit amet, consectetur, adipisci velit, 
-											sed quia non numquam eius modi tempora incidunt ut
-											labore et dolore magnam aliquam quaerat voluptatem.</p>
-										</div>
-										<a href="index.html" class="lb-close">Close</a>
-								</div>
-						</div>
-					</li>
-					<div class="clearfix"> </div>
-				</ul>
-			</section>
-				<div class="clearfix"> </div>
-			</div>
-		</div>
-		<div class="testimonials">
-			<div class="container">
-				
-				<div class="callbacks_container">
-					<ul class="rslides" id="slider3">
-						<li>
-							<div class="test-test">
-								<div class="col-md-4 test-left text-center">
-									<img src="images/test1.png" alt=" " />
-								</div>
-								<div class="col-md-8 test-right">
-									<p>Neque porro quisquam est, qui dolorem ipsum 
-															quia dolor sit amet, consectetur, adipisci velit, 
-															sed quia non numquam eius modi tempora incidunt ut
-															labore et dolore magnam aliquam quaerat voluptatem.
-										Neque porro quisquam est, qui dolorem ipsum 
-															quia dolor sit amet, consectetur, adipisci velit, 
-															sed quia non numquam eius modi tempora incidunt ut
-															labore et dolore magnam aliquam quaerat voluptatem.</p>
-									<h5> Kimberly Thompson</h5>
-								
-								</div>
-								<div class="clearfix"> </div>
-							</div>
-						</li>
-						<li>
-							<div class="test-test">
-								<div class="col-md-4 test-left text-center">
-									<img src="images/test2.png" alt=" " />
-								</div>
-								<div class="col-md-8 test-right">
-									<p>Neque porro quisquam est, qui dolorem ipsum 
-															quia dolor sit amet, consectetur, adipisci velit, 
-															sed quia non numquam eius modi tempora incidunt ut
-															labore et dolore magnam aliquam quaerat voluptatem.
-										Neque porro quisquam est, qui dolorem ipsum 
-															quia dolor sit amet, consectetur, adipisci velit, 
-															sed quia non numquam eius modi tempora incidunt ut
-															labore et dolore magnam aliquam quaerat voluptatem.</p>
-									<h5> Federic Victoria</h5>
-								
-								</div>
-								<div class="clearfix"> </div>
-							</div>
-						</li>
-						<li>
-							<div class="test-test">
-								<div class="col-md-4 test-left text-center">
-									<img src="images/test3.png" alt=" " />
-								</div>
-								<div class="col-md-8 test-right">
-									<p>Neque porro quisquam est, qui dolorem ipsum 
-															quia dolor sit amet, consectetur, adipisci velit, 
-															sed quia non numquam eius modi tempora incidunt ut
-															labore et dolore magnam aliquam quaerat voluptatem.
-										Neque porro quisquam est, qui dolorem ipsum 
-															quia dolor sit amet, consectetur, adipisci velit, 
-															sed quia non numquam eius modi tempora incidunt ut
-															labore et dolore magnam aliquam quaerat voluptatem.</p>
-									<h5>William Patrick</h5>
-								
-								</div>
-								<div class="clearfix"> </div>
-							</div>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-		<div id="team" class="singers">
-			<div class="container">
-				<h3>Popular Singers</h3>
-					<div class="col-md-4 team-gs text-center">
-						<div class="ih-item circle effect1"><a href="#">
-							<div class="spinner"></div>
-							<div class="img"><img src="images/t1.jpg" alt="img"></div>
-							<div class="info">
-							  <div class="info-back">
-								<h3>Victoria</h3>
-								<p>Description goes here</p>
-							  </div>
-							</div></a>
-							
-						</div>
-						<p class="team-text">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit</p>
-						<div class="team_pos">
-								<ul>
-									<li>
-										<a href="#"><div class="morph pic fb_icon1">
-											
-										</div></a>
-									</li>
-									<li>
-										<a href="#"><div class="morph pic fb_icon2">
-											
-										</div></a>
-									</li>
-									<li>
-										<a href="#"><div class="morph pic fb_icon3">
-											
-										</div></a>
-									</li>
-								</ul>
-						</div>
-					</div>
-					<div class="col-md-4 team-gs text-center">
-						<div class="ih-item circle effect1"><a href="#">
-							<div class="spinner"></div>
-							<div class="img"><img src="images/t2.jpg" alt="img"></div>
-							<div class="info">
-							  <div class="info-back">
-								<h3>Federica</h3>
-								<p>Description goes here</p>
-							  </div>
-							</div></a></div>
-						<p class="team-text">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit</p>
-						<div class="team_pos">
-								<ul>
-									<li>
-										<a href="#"><div class="morph pic fb_icon1">
-											
-										</div></a>
-									</li>
-									<li>
-										<a href="#"><div class="morph pic fb_icon2">
-											
-										</div></a>
-									</li>
-									<li>
-										<a href="#"><div class="morph pic fb_icon3">
-											
-										</div></a>
-									</li>
-								</ul>
-						</div>
-					</div>
-					<div class="col-md-4 team-gs text-center">
-						<div class="ih-item circle effect1"><a href="#">
-							<div class="spinner"></div>
-							<div class="img"><img src="images/t3.jpg" alt="img"></div>
-							<div class="info">
-							  <div class="info-back">
-								<h3>Thompson</h3>
-								<p>Description goes here</p>
-							  </div>
-							</div></a></div>
-						<p class="team-text">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit</p>
-						<div class="team_pos">
-								<ul>
-									<li>
-										<a href="#"><div class="morph pic fb_icon1">
-											
-										</div></a>
-									</li>
-									<li>
-										<a href="#"><div class="morph pic fb_icon2">
-											
-										</div></a>
-									</li>
-									<li>
-										<a href="#"><div class="morph pic fb_icon3">
-											
-										</div></a>
-									</li>
-								</ul>
-						</div>
-					</div>
-					<div class="clearfix"> </div>
-			</div>
-		</div>
-		<div id="contact" class="contact">
-			<div class="container">	
-				<div class="col-md-5 contact-left">
-					<h3>Information</h3>
-					<form>
-						<input type="text" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" required="">
-						<input type="text" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required="">
-						<textarea onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message...';}" required>Message...</textarea>
-						<input type="submit" value="Send" >
-					</form>
-				</div>
-				<div class="col-md-3 contact-left">
-					<h3>Address</h3>
-					<h2>Rock Star</h2>
-					<p>Diamond street,<br>
-						260-14 City,<br>
-						Newyork
-						</p>
-					<p>Phone no :+3402 890 679<br>
-					Fax : +5356 890 679</p>
-					<p>Email : <a href="mailto:info@example.com"> info@example.com</a></p>
-					<div class="team_pos">
-						<ul>
-							<li>
-								<a href="#"><div class="morph pic fb_icon1"></div></a>
-							</li>
-							<li><a href="#"><div class="morph pic fb_icon2"></div></a></li>
-							<li><a href="#"><div class="morph pic fb_icon3"></div></a>
-							</li>
-							<li><a href="#"><div class="morph pic fb_icon4"></div></a>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-md-4 footer-grid">
-					<h4>Subscribe Now</h4>
-					<form>
-						<input type="text" value="Enter your email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your email';}" required="">
-						<input type="submit" value=" ">
-					</form>
+					<h3>保证原创</h3>
+                    <p><h4>Honor Code，保证原创，我们不屑于抄袭 </h4></p>
 				</div>
 				<div class="clearfix"> </div>
-				<p class="footer">Copyright &copy; 2016.Company name All rights reserved.More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a></p>
+                <span style="color: black;"><h2>搞定各类CS作业</h2></span>
+                <span style="color: green;"><h3>Algorithm,Data Structure Database</h3></span>
+                <span style="color: green;"><h3>C/C++,Java,Python/perl,x86汇编</h3></span>
+                <span style="color: green;"><h3>Functional Programming, Distributed System</h3></span>
+                <span style="color: green;"><h3>Matlab, 大数据</h3></span>
+                <span style="color: green;"><h3>Machine Learning, 人工智能, Spark</h3></span>
+                <span style="color: green;"><h3>Mysql/Oracle,TCP/IP, Network</h3></span>
+                <span style="color: green;"><h3>Operating System, Compiler</h3></span>
 			</div>
-		</div>
-	</div>
-	<div id="sidebar">
-		<div id="widgets">
-			<nav id="mainmenu">
-				<ul>
-					<li><a href="#home" class="scroll active">Home</a></li>
-					<li><a href="#about" class="scroll">About</a></li>
-					<li><a href="#services" class="scroll">Services</a></li>
-					<li><a href="#gallery"  class="scroll">Gallery</a></li>
-					<li><a href="#team"  class="scroll">Team</a></li>
-					<li><a href="#contact"  class="scroll">Contact</a></li>
-				</ul>
-			</nav>
-
+		<div class="clearfix"> </div>
 		</div>
 	</div>
 </div>
-<!-- for bootstrap working -->
-	<script src="js/bootstrap.js"></script>
-<!-- //for bootstrap working -->
 
-<!-- smooth scrolling -->
-	<script type="text/javascript">
-		$(document).ready(function() {
-		/*
-			var defaults = {
-			containerID: 'toTop', // fading element id
-			containerHoverID: 'toTopHover', // fading element hover id
-			scrollSpeed: 1200,
-			easingType: 'linear' 
-			};
-		*/								
-		$().UItoTop({ easingType: 'easeOutQuart' });
-		});
-	</script>
-	<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
-<!-- //smooth scrolling -->
+<!---statistics--->
+			<div class="statistics" id="success">
+				<div class="container">
+					<div class="ser-top ser-top1">
+						<h3>我们的优势</h3>
+						
+						<div class="ser-t">
+							<b></b>
+							<b class="line"></b>
+						</div>
+					</div>
+					<div class="statistics-grids">
+						<div class="col-md-3 statistics-grid">
+							<div class="statistics-text">
+								<div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='20' data-delay='.5' data-increment="100">5206</div>
+								<h5>科目分类</h5>
+								<div class="sar-t">
+									<b></b>
+									<b class="line-1"></b>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3 statistics-grid">
+							<div class="statistics-text">
+								<div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='50' data-delay='.5' data-increment="100">372</div>
+								<h5>硕士以上学历写手</h5>
+								<div class="sar-t">
+									<b></b>
+									<b class="line-1"></b>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3 statistics-grid">
+							<div class="statistics-text">
+								<div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='200' data-delay='.5' data-increment="100">1052</div>
+								<h5>单每天的流水</h5>
+								<div class="sar-t">
+									<b></b>
+									<b class="line-1"></b>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3 statistics-grid">
+							<div class="statistics-text">
+								<div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='1000' data-delay='.5' data-increment="100">256</div>
+								<h5>分的努力</h5>
+								<div class="sar-t">
+									<b></b>
+									<b class="line-1"></b>
+								</div>
+							</div>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+			</div>
+				<!---statistics--->
+<div class="tlinks">Collect from <a href="http://www.cssmoban.com/" >手机网站模板</a></div>
+					<!--gallery-->
+<!--<div class="gallery" id="gallery">-->
+	<!--<div class="container">-->
+		<!--<div class="ser-top ga-top">-->
+			<!--<h3>Gallery</h3>-->
+			<!--<div class="ser-t">-->
+				<!--<b></b>-->
+				<!--<b class="line"></b>-->
+			<!--</div>-->
+						<!--<p> There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>-->
+
+		<!--</div>-->
+		
+            <!--<ul class="simplefilter">-->
+                <!--<li class="active" data-filter="all">All</li>-->
+                <!--<li data-filter="1">Category</li>-->
+                <!--<li data-filter="2">Category1</li>-->
+                <!--<li data-filter="3">Category2</li>-->
+                <!--<li data-filter="4">Category3</li>-->
+                <!--<li data-filter="5">Category4</li>-->
+            <!--</ul>-->
+     
+            <!--<div class="filtr-container">-->
+                <!--<div class="  filtr-item gallery-t" data-category="1, 5" data-sort="Busy streets">-->
+				
+                <!--<a href="images/ga.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">-->
+	
+					<!--<figure>-->
+					 <!--<img src="images/ga.jpg" class="img-responsive" alt=" " />	<figcaption>-->
+							<!--<h3>Prevailing</h3>-->
+							<!--<p>-->
+								<!--Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod-->
+								<!--tempor incididunt ut labore et dolore magna aliqua.-->
+							<!--</p>-->
+						<!--</figcaption>-->
+					<!--</figure>-->
+				<!--</a>-->
+
+                <!--</div>-->
+                <!--<div class=" filtr-item" data-category="2, 5" data-sort="Luminous night">-->
+                   <!--<a href="images/ga1.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">-->
+
+					<!--<figure>-->
+					 <!--<img src="images/ga1.jpg" class="img-responsive" alt=" " />	<figcaption>-->
+							<!--<h3>Prevailing</h3>-->
+							<!--<p>-->
+								<!--Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod-->
+								<!--tempor incididunt ut labore et dolore magna aliqua.-->
+							<!--</p>-->
+						<!--</figcaption>-->
+					<!--</figure>-->
+				<!--</a>-->
+
+                <!--</div>-->
+                <!--<div class=" filtr-item" data-category="1, 4" data-sort="City wonders">-->
+                    <!--<a href="images/ga2.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">-->
+
+					<!--<figure>-->
+					 <!--<img src="images/ga2.jpg" class="img-responsive" alt=" " />	<figcaption>-->
+							<!--<h3>Prevailing</h3>-->
+							<!--<p>-->
+								<!--Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod-->
+								<!--tempor incididunt ut labore et dolore magna aliqua.-->
+							<!--</p>-->
+						<!--</figcaption>-->
+					<!--</figure>-->
+				<!--</a>-->
+
+                <!--</div>-->
+                <!--<div class="  filtr-item" data-category="3" data-sort="In production">-->
+                   <!--<a href="images/ga3.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">-->
+
+					<!--<figure>-->
+					 <!--<img src="images/ga3.jpg" class="img-responsive" alt=" " />	<figcaption>-->
+							<!--<h3>Prevailing</h3>-->
+							<!--<p>-->
+								<!--Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod-->
+								<!--tempor incididunt ut labore et dolore magna aliqua.-->
+							<!--</p>-->
+						<!--</figcaption>-->
+					<!--</figure>-->
+				<!--</a>-->
+
+                <!--</div>-->
+                <!--<div class=" filtr-item" data-category="3, 4" data-sort="Industrial site">-->
+                  <!--<a href="images/ga4.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">-->
+
+					<!--<figure>-->
+					 <!--<img src="images/ga4.jpg" class="img-responsive" alt=" " />	<figcaption>-->
+							<!--<h3>Prevailing</h3>-->
+							<!--<p>-->
+								<!--Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod-->
+								<!--tempor incididunt ut labore et dolore magna aliqua.-->
+							<!--</p>-->
+						<!--</figcaption>-->
+					<!--</figure>-->
+				<!--</a>-->
+
+                <!--</div>-->
+                <!--<div class=" filtr-item" data-category="2, 4" data-sort="Peaceful lake">-->
+                    <!--<a href="images/ga5.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">-->
+
+					<!--<figure>-->
+					 <!--<img src="images/ga5.jpg" class="img-responsive" alt=" " />	<figcaption>-->
+							<!--<h3>Prevailing</h3>-->
+							<!--<p>-->
+								<!--Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod-->
+								<!--tempor incididunt ut labore et dolore magna aliqua.-->
+							<!--</p>-->
+						<!--</figcaption>-->
+					<!--</figure>-->
+				<!--</a>-->
+
+                <!--</div>-->
+                <!--<div class="  filtr-item" data-category="1, 5" data-sort="City lights">-->
+                   <!--<a href="images/ga6.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">-->
+
+					<!--<figure>-->
+					 <!--<img src="images/ga6.jpg" class="img-responsive" alt=" " />	<figcaption>-->
+							<!--<h3>Prevailing</h3>-->
+							<!--<p>-->
+								<!--Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod-->
+								<!--tempor incididunt ut labore et dolore magna aliqua.-->
+							<!--</p>-->
+						<!--</figcaption>-->
+					<!--</figure>-->
+				<!--</a>-->
+
+                <!--</div>-->
+                <!--<div class=" filtr-item" data-category="2, 4" data-sort="Dreamhouse">-->
+                   <!--<a href="images/ga7.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">-->
+
+					<!--<figure>-->
+					 <!--<img src="images/ga7.jpg" class="img-responsive" alt=" " />	<figcaption>-->
+							<!--<h3>Prevailing</h3>-->
+							<!--<p>-->
+								<!--Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod-->
+								<!--tempor incididunt ut labore et dolore magna aliqua.-->
+							<!--</p>-->
+						<!--</figcaption>-->
+					<!--</figure>-->
+				<!--</a>-->
+
+                <!--</div>-->
+				<!--<div class=" filtr-item" data-category="2, 4" data-sort="Dreamhouse">-->
+                  <!--<a href="images/ga8.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">-->
+
+					<!--<figure>-->
+					 <!--<img src="images/ga8.jpg" class="img-responsive" alt=" " />	<figcaption>-->
+							<!--<h3>Prevailing</h3>-->
+							<!--<p>-->
+								<!--Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod-->
+								<!--tempor incididunt ut labore et dolore magna aliqua.-->
+							<!--</p>-->
+						<!--</figcaption>-->
+					<!--</figure>-->
+				<!--</a>-->
+
+                <!--</div>-->
+				
+               <!--<div class="clearfix"> </div>-->
+            <!--</div>-->
+  <!--</div>-->
+<!--</div>-->
+
+    <!--[> Include jQuery & Filterizr <]-->
+    
+    <!--<script src="js/jquery.filterizr.js"></script>-->
+    <!--<script src="js/controls.js"></script>-->
+
+    <!--[> Kick off Filterizr <]-->
+    <!--<script type="text/javascript">-->
+        <!--$(function() {-->
+            <!--//Initialize filterizr with default options-->
+            <!--$('.filtr-container').filterizr();-->
+        <!--});-->
+    <!--</script>-->
+	<!--[><]-->
+	<!--<script src="js/jquery.chocolat.js"></script>-->
+		<!--<link rel="stylesheet" href="css/chocolat.css" type="text/css" media="screen" charset="utf-8">-->
+		<!--[>light-box-files <]-->
+		<!--<script type="text/javascript" charset="utf-8">-->
+		<!--$(function() {-->
+			<!--$('.filtr-item a').Chocolat();-->
+		<!--});-->
+		<!--</script>-->
+
+	<!--[>//gallery<]-->
+	<!--<link href="css/owl.carousel.css" rel="stylesheet">-->
+								<!--<script src="js/owl.carousel.js"></script>-->
+
+	 <!--[> requried-jsfiles-for owl <]-->
+									<!--<script>-->
+										<!--$(document).ready(function() {-->
+										  <!--$("#owl-demo2").owlCarousel({-->
+											<!--items : 1,-->
+											<!--lazyLoad : false,-->
+											<!--autoPlay : true,-->
+											<!--navigation : false,-->
+											<!--navigationText :  false,-->
+											<!--pagination : true,-->
+										  <!--});-->
+										<!--});-->
+									  <!--</script>-->
+							 <!-- //requried-jsfiles-for owl -->
+ <!-- start content_slider -->
+						      
+				
+	<!---->
+
+	<!--<div class="test" id="testimonials">-->
+		<!--<div class="container">-->
+		<!--<div class="ser-top ga-top">-->
+			<!--<h3>Testimonials</h3>-->
+			<!--<div class="ser-t">-->
+				<!--<b></b>-->
+				<!--<b class="line"></b>-->
+			<!--</div>-->
+						<!--<p> There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>-->
+
+		<!--</div>-->
+			<!--<div class=" test-grid-1">-->
+				<!--<div class=" col-md-4 test-wrapper">-->
+					<!--<img src="images/tt2.png" alt="" class="img-responsive">-->
+					<!--</div>-->
+					<!--<div class="col-md-8 test-grid1">-->
+					 <!--<div id="owl-demo2" class="owl-carousel">-->
+										   <!--<div class=" test-grid">-->
+						<!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.-->
+						<!--Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod-->
+								<!--tempor incididunt ut labore et dolore magna aliqua.consectetur adipisicing elit, sed do eiusmod-->
+								<!--tempor incididunt ut labore et dolore magna aliqua</p>-->
+							<!--<img src="images/left-1.png" alt="" class="img-responsive">-->
+						<!--<h4>Andery</h4>-->
+						<!--<span>Ceo</span>-->
+					<!--</div>	-->
+								<!--<div class=" test-grid">-->
+						<!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.-->
+						<!--Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod-->
+								<!--tempor incididunt ut labore et dolore magna aliqua.consectetur adipisicing elit, sed do eiusmod-->
+								<!--tempor incididunt ut labore et dolore magna aliqua</p>-->
+							<!--<img src="images/left-1.png" alt="" class="img-responsive">-->
+						<!--<h4>Andery</h4>-->
+						<!--<span>Ceo</span>-->
+					<!--</div>	-->
+	<!--<div class=" test-grid">-->
+						<!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.-->
+						<!--Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod-->
+								<!--tempor incididunt ut labore et dolore magna aliqua.consectetur adipisicing elit, sed do eiusmod-->
+								<!--tempor incididunt ut labore et dolore magna aliqua</p>-->
+							<!--<img src="images/left-1.png" alt="" class="img-responsive">-->
+						<!--<h4>Andery</h4>-->
+						<!--<span>Ceo</span>-->
+					<!--</div>						-->
+								<!--</div>-->
+					
+					<!--</div>-->
+					<!--<div class="clearfix"></div>-->
+				<!--</div>-->
+				
+			<!--</div>-->
+		<!--</div>-->
+	<!--</div>-->
+<!---->
+<!--<div class="team" id="team">-->
+	<!--<div class="container">-->
+		<!--<div class="ser-top ga-top">-->
+			<!--<h3>Our Team</h3>-->
+			<!--<div class="ser-t">-->
+				<!--<b></b>-->
+				<!--<b class="line"></b>-->
+			<!--</div>-->
+
+		<!--</div>-->
+		
+		<!--<div class="col-md-3 bottom-grid ">-->
+			<!--<div class="btm-right">-->
+				<!--<img src="images/te.jpg" class="img-responsive" alt=" ">-->
+					<!--<div class="captn">						-->
+							<!--<h4>Victoria</h4>-->
+							<!--<p>Ceo</p>-->
+						<!--<ul class="captn2">-->
+							<!--<li><a href="#" class="icon1"></a></li>-->
+							<!--<li><a href="#" class="icon2"></a></li>-->
+							<!--<li><a href="#" class="icon3"></a></li>-->
+						<!--</ul>-->
+					<!--</div>-->
+			<!--</div>-->
+		<!--</div>-->
+		<!--<div class="col-md-3 bottom-grid ">-->
+			<!--<div class="btm-right">-->
+				<!--<img src="images/te1.jpg" class="img-responsive" alt=" ">-->
+					<!--<div class="captn">-->
+					
+							<!--<h4>Adley</h4>-->
+						<!--<p>Manager</p>-->
+						<!--<ul class="captn2">-->
+							<!--<li><a href="#" class="icon1"></a></li>-->
+							<!--<li><a href="#" class="icon2"></a></li>-->
+							<!--<li><a href="#" class="icon3"></a></li>-->
+						<!--</ul>-->
+					<!--</div>-->
+			<!--</div>-->
+		<!--</div>-->
+		<!--<div class="col-md-3 bottom-grid ">-->
+			<!--<div class="btm-right">-->
+				<!--<img src="images/te2.jpg" class="img-responsive" alt=" ">-->
+					<!--<div class="captn">-->
+						
+							<!--<h4>Immortal</h4>-->
+						<!--<p>Web developer</p>-->
+						<!--<ul class="captn2">-->
+							<!--<li><a href="#" class="icon1"></a></li>-->
+							<!--<li><a href="#" class="icon2"></a></li>-->
+							<!--<li><a href="#" class="icon3"></a></li>-->
+						<!--</ul>-->
+					<!--</div>-->
+			<!--</div>-->
+		<!--</div>-->
+		<!--<div class="col-md-3 bottom-grid ">-->
+			<!--<div class="btm-right">-->
+				<!--<img src="images/te3.jpg" class="img-responsive" alt=" ">-->
+					<!--<div class="captn">-->
+						
+							<!--<h4>Warlike</h4>-->
+							<!--<p>Web designer</p>-->
+						<!--<ul class="captn2">-->
+							<!--<li><a href="#" class="icon1"></a></li>-->
+							<!--<li><a href="#" class="icon2"></a></li>-->
+							<!--<li><a href="#" class="icon3"></a></li>-->
+						<!--</ul>-->
+					<!--</div>-->
+			<!--</div>-->
+		<!--</div>-->
+		<!--<div class="clearfix"></div>-->
+	<!--</div>-->
+<!--</div>	-->
+
+<!--[>contact<]-->
+	<!--<div class="map-top" id="contact">-->
+					<!--<div class="col-md-4 address">-->
+					<!--<div class="contact-grid1">-->
+						
+						
+							<!--<h4>Address</h4>-->
+							<!--<p>12K Street, 45 Building Road <span>Canada.</span></p>-->
+						
+					<!--</div>-->
+			
+					<!--<div class="contact-grid1">-->
+						
+							<!--<h4>Call Us</h4>-->
+							<!--<p>+1234 758 839<span>+1273 748 730</span></p>-->
+						
+					<!--</div>-->
+			
+				
+					<!--<div class="contact-grid1">-->
+						
+							<!--<h4>Email</h4>-->
+							<!--<p><a href="mailto:info@example.com">info@example1.com</a><span><a href="mailto:info@example.com">info@example2.com</a></span></p>-->
+						
+					<!--</div>-->
+				
+					<!--</div>-->
+					<!--<div class="clearfix"> </div>-->
+				<!--</div>-->
+<!--<div class="contact">-->
+<!--<div class="container">-->
+	<!--<div class="ser-top ga-top">-->
+			<!--<h3>Contact</h3>-->
+			<!--<div class="ser-t">-->
+				<!--<b></b>-->
+				<!--<b class="line"></b>-->
+			<!--</div>-->
+						<!--<p> There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>-->
+
+		<!--</div>-->
+				<!--<div class="top-contact">-->
+				<!--<form action="#" method="post">-->
+				<!--<div class="col-md-6 grid-contact">-->
+					<!--<div class="your-top">-->
+						<!--<i class="glyphicon glyphicon-user"> </i>-->
+						<!--<input type="text" placeholder="Name" name="Name"  required >								-->
+						<!--<div class="clearfix"> </div>-->
+					<!--</div>-->
+					<!--<div class="your-top">-->
+						<!--<i class="glyphicon glyphicon-envelope"> </i>-->
+						<!--<input type="text" placeholder="E-mail" name="E-mail" required>								-->
+						<!--<div class="clearfix"> </div>-->
+					<!--</div>-->
+					<!--<div class="your-top">-->
+						<!--<i class="glyphicon glyphicon-link"> </i>-->
+						<!--<input type="text" placeholder="Website" name="Website"  required>								-->
+						<!--<div class="clearfix"> </div>-->
+					<!--</div>-->
+					
+				<!--</div>-->
+				<!--<div class="col-md-6 grid-contact-in">-->
+					<!--<textarea  placeholder=" Message" name="Message"  required></textarea>-->
+					<!--<input type="submit" value="Send">-->
+				<!--</div>-->
+				<!--<div class="clearfix"> </div>-->
+				<!--</form>-->
+			<!--</div>-->
+			<!--</div>-->
+			<!--</div>-->
+		
+
+	<!--footer-->
+	<div class="copy">
+		<p class="footer-grid" >Copyright &copy; 2016.Company name All rights reserved.More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a></p>
+		<ul class="captn2 footer-sc">
+							<li><a href="#" class="icon1"></a></li>
+							<li><a href="#" class="icon2"></a></li>
+							<li><a href="#" class="icon3"></a></li>
+								
+						</div>
+	</div>
+		 <script type="text/javascript">
+						$(document).ready(function() {
+							/*
+							var defaults = {
+					  			containerID: 'toTop', // fading element id
+								containerHoverID: 'toTopHover', // fading element hover id
+								scrollSpeed: 1200,
+								easingType: 'linear' 
+					 		};
+							*/
+							
+							$().UItoTop({ easingType: 'easeOutQuart' });
+							
+						});
+					</script>
+				<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+	 </div>
+
+<!-- for bootstrap working -->
+	<script src="js/bootstrap.min.js"></script>
+<!-- //for bootstrap working -->
 </body>
 </html>
